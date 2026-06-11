@@ -2,7 +2,7 @@
 
 
 
-###### So i did a little digging. Went to my college's website and found out the CGPA calculation formula. 
+###### So i did a little digging. Went to my college's website and found out the CGPA calculation formula.
 
 ###### 
 
@@ -10,5 +10,5 @@
 
 
 
-
+I will try to make this project by myself.
 
