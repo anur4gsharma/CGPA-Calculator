@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Minimalist SGPA and CGPA calculator. Enter your subjects, credits, and grades to instantly compute your semester and cumulative GPA.">
+  <title>SGPA / CGPA Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- ════════ HEADER ════════ -->
+    <div class="header">
+      <h1>GPA Calculator</h1>
+      <p>Calculate your SGPA &amp; CGPA instantly</p>
+    </div>
+
+    <!-- ════════ VIEW 1 — Semester Count ════════ -->
+    <div id="view-setup" class="view active">
+      <div class="card semester-selector">
+        <div class="card-label">How many semesters?</div>
+        <div class="number-display" id="sem-count">1</div>
+        <div class="semester-controls">
+          <button class="sem-btn" id="sem-minus" aria-label="Decrease semesters">−</button>
+          <button class="sem-btn" id="sem-plus" aria-label="Increase semesters">+</button>
+        </div>
+      </div>
+      <button class="btn-primary" id="btn-start">Continue</button>
+    </div>
+
+    <!-- ════════ VIEW 2 — Subjects & Calculation ════════ -->
+    <div id="view-calc" class="view">
+
+      <button class="btn-back" id="btn-back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+        Back
+      </button>
+
+      <!-- Semester Tabs -->
+      <div class="semester-tabs" id="semester-tabs"></div>
+
+      <!-- Subject Entry -->
+      <div class="card">
+        <div class="card-label" id="sem-title">Semester 1 — Subjects</div>
+
+        <div class="col-headers">
+          <span class="col-header">Subject</span>
+          <span class="col-header">Credits</span>
+          <span class="col-header">Grade</span>
+          <span class="col-header"></span>
+        </div>
+
+        <div class="subject-list" id="subject-list"></div>
+        <button class="btn-add" id="btn-add-subject">+ Add Subject</button>
+      </div>
+
+      <!-- Results -->
+      <div class="results-panel">
+        <div class="result-grid">
+          <div class="result-card sgpa">
+            <div class="result-label">SGPA</div>
+            <div class="result-value" id="sgpa-value">—</div>
+            <div class="result-sub" id="sgpa-detail"></div>
+          </div>
+          <div class="result-card cgpa">
+            <div class="result-label">CGPA</div>
+            <div class="result-value" id="cgpa-value">—</div>
+            <div class="result-sub" id="cgpa-detail"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
