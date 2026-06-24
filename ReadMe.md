@@ -10,5 +10,3 @@
 
 
 
-I will try to make this project by myself.
-
