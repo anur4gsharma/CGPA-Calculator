@@ -8,5 +8,5 @@
 
 ###### What this does : You can enter your expected grade in each subject and this application will turn it into SGPA and return your total CGPA.
 
-###### This can only calculate the CGPA you think you can get with specific grades in subjects.
+###### This can only calculate the CGPA you think you can get with specific grades in subjects..
 
